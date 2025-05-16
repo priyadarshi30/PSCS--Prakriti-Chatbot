@@ -1,0 +1,148 @@
+.otp-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .otp-container h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .otp-instruction {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .otp-input-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .otp-input {
+    width: 44px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .otp-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+  
+  .otp-timer {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .otp-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.75rem;
+  }
+  
+  .otp-btn.verify {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .otp-btn.verify:disabled {
+    background-color: #b2dfdb;
+    cursor: not-allowed;
+  }
+  
+  .otp-btn.resend {
+    background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  .otp-message {
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .otp-message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+  
+  .otp-message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive support */
+  @media (max-width: 480px) {
+    .otp-input-group {
+      gap: 8px;
+    }
+  
+    .otp-input {
+      width: 40px;
+      height: 44px;
+      font-size: 1.25rem;
+    }
+  
+    .otp-btn {
+      font-size: 0.95rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+
+  .email-display {
+    background: rgba(64, 0, 128, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid rgba(128, 0, 128, 0.2);
+  }
+
+  .email-display p {
+    margin: 0;
+    color: #b892ff;
+  }
+
+  .email-display strong {
+    color: #000000;
+    font-weight: 600;
+  }
